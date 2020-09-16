@@ -26,7 +26,7 @@ with open('public.pem','w') as pf:
 
 
 #Encryption
-if(len(sys.argv) > 2):
+if(len(sys.argv) > 1):
 	fichier = sys.argv[1]
 else:
 	fichier = input("Le fichier à crypter: ")
@@ -36,7 +36,12 @@ text = fo.read()
 d_encrypt = key.publickey().encrypt(text,32)
 
 #Ecriture du fichier encrypté
-fo = open(fichier + '.crypt', 'wb')
+
+output = fichier + '.crypt'
+if (len(sys.argv) > 2):
+	output = sys.argv[2]
+
+fo = open(output, 'wb')
 fo.write(d_encrypt[0])
 
 
