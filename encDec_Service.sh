@@ -5,7 +5,13 @@
 USERNAME=$( whoami )
 if [[ "$USERNAME" = "root" ]]
 then
+	#Prendre l'utilisateur de sudo
 	USERNAME=$( logname )
+	if [ -z $USERNAME ]
+	then
+		#L'utilisateur a réellement demarré en session root
+		USERNAME="root"
+	fi
 fi
 
 #variables modifiables par l'utilisateur
