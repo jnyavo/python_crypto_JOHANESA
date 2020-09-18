@@ -16,7 +16,7 @@ Ce projet est un programme de cryptage et de decryptage qui peut se lancer en ta
 
 ### Tech
 
-Ressources utilisés:
+Ressources utilisées:
 
 * [pyCrypto](https://gist.github.com/YannBouyeron/f39893644f89dd676297cc3bc67eaedb) - Module de chiffrement RSA
 * [Python] - Language de programmation
