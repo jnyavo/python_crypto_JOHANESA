@@ -2,7 +2,7 @@
 
 
 
-Ce projet est un programme de cryptage et de decryptage qui peut ce lancer en tant que daemon.
+Ce projet est un programme de cryptage et de decryptage qui peut se lancer en tant que daemon.
 
 
 # Fonctionnalité
