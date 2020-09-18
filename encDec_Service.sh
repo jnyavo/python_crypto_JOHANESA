@@ -77,7 +77,7 @@ do
 		#DECRYPTAGE
 		while IFS=$'\n' read fichier
         	do
-			if [ -z $fichier]
+			if [ -z $fichier ]
 			then
 				break
 			fi
