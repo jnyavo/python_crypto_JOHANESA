@@ -60,14 +60,18 @@ def gen_rsaFiles(private,public):
 	
 	#Ecrire les clés dans des fichiers pem
 	
-	
-	with open(private,'w') as kf:
-		kf.write(k.decode())
-		kf.close()
+	try:
+		with open(private,'w') as kf:
+			kf.write(k.decode())
+			kf.close()
 
-	with open(public,'w') as pf:
-		pf.write(p.decode())
-		pf.close()
+		with open(public,'w') as pf:
+			pf.write(p.decode())
+			pf.close()
+	except:
+		#Si le dossier n'existe pas
+		os.system("mkdir -p " + chemin_gen)
+		gen_rsaFiles(private,public)
 
 	return key
 

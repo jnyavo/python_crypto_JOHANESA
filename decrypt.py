@@ -10,7 +10,7 @@ cle_prive = False
 cle_public = False
 
 homedir = os.path.expanduser("~")
-chemin_gen = homedir + "/cryptoProjet/keys/"
+chemin_gen = homedir + "/cryptoProject/keys/"
 private_rsa_file = "private.pem"
 public_rsa_file = "public.pem"
 
@@ -30,7 +30,7 @@ if (len(sys.argv) > 4):
 
 def get_keys(private,public):
 
-        #Prend les clés
+        #Retourne les clés
         with open(private,'r') as fk:
                 private = RSA.importKey(fk.read())
                 fk.close()
