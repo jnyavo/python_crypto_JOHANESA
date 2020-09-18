@@ -9,10 +9,12 @@ fichier_out = False
 cle_prive = False
 cle_public = False
 
-chemin_gen = "./keys/"
+#chemin_gen = "./keys/"
+homedir = os.path.expanduser("~")
+chemin_gen = homedir + "/cryptoProject/keys/"
+
 private_rsa_file = "private.pem"
 public_rsa_file = "public.pem"
-
 
 
 
@@ -58,7 +60,6 @@ def gen_rsaFiles(private,public):
 	
 	#Ecrire les clés dans des fichiers pem
 	
-	os.system("mkdir keys" )
 	
 	with open(private,'w') as kf:
 		kf.write(k.decode())

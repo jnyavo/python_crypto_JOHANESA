@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import sys
+import os
 from Crypto.PublicKey import RSA
 
 
@@ -8,7 +9,8 @@ fichier_out = False
 cle_prive = False
 cle_public = False
 
-chemin_gen = "./keys/"
+homedir = os.path.expanduser("~")
+chemin_gen = homedir + "/cryptoProjet/keys/"
 private_rsa_file = "private.pem"
 public_rsa_file = "public.pem"
 
