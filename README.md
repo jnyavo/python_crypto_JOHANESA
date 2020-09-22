@@ -54,7 +54,7 @@ Il est possible de chiffrer ou dechiffrer des fichiers manuellement avec les fic
 $ ./encrypt.py <fichier> <destination> <optionnel:clé privée> <optionnel:clé public>
 $ ./decrypt.py <fichier> <destination> <optionnel:clé privée> <optionnel:clé public>
 ```
-Pour encrypt.py, si les arguments <clé privée> et <clé public> sont vides, le programme générera les fichiers clés .pem dans le chemin par défaut
+Pour encrypt.py, si les arguments <clé privée> et <clé public> sont vides, le programme générera les fichiers clés .pem dans le chemin par défaut <br>
 Pour decrypt.py, si les arguments <clé privée> et <clé public> sont vides, le programme cherchera les fichiers clés dans le chemin par défaut
 
 #### Configuration
